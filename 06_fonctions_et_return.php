@@ -1,8 +1,5 @@
 <?php
 
-// si on veut qu'un fichier soit inclus dans un autre, p-e pour se servir d'une fonction ailleurs
-// require 'fonctions_par_exemple.php';
-
 $y = 333;
 
 function enregistrer($nom) {

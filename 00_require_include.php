@@ -8,7 +8,7 @@
 // include_once va ignorer un autre include du même fichier
 
 
-// include va continuer si le fichier n'est pas trouvé
+// *** include va continuer si le fichier n'est pas trouvé
 // mais require va stopper le reste plus bas EN PLUS d'afficher une erreur
 
 
@@ -18,6 +18,16 @@
 // <?php
 //      return qqchose;
 // ? >
+
+
+// J'ai fait un exemple dans le dossier /test_include_nav/
+// si on veut que le contenu de nav.php soit un string, on peut
+// ob_start();
+// include ...
+// $nav = ob_get_clean();
+
+// et même remplacer des caractères ex:
+// echo str_replace('Accueil', 'Home', $nav);
 
 
 ?>
