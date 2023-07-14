@@ -6,21 +6,40 @@ $fichier = "extras/lignes.txt";
 
 if (file_exists($fichier)) {
     // echo readfile($fichier);
+    // fgetcsv()
     $fopen = fopen($fichier, 'r');
     $contenu = fread($fopen, filesize($fichier));
     fclose($fopen);
     echo $fichier." existe, alors voici son contenu :<br>";
-    echo $contenu;
+    echo $contenu."<br><br><br>";
+
+    // ou
+
+    echo "ligne par ligne :<br>";
+    $fopen = fopen($fichier, 'r');
+    while (($ligne = fgets($fopen)) != false) {
+        echo $ligne."<br>";
+    }
+    fclose($fopen);
 }
 else {
     $fopen = fopen($fichier, 'w');
-    $contenu = 'Ligne #1' . PHP_EOL . 'Ligne#2';
+    $contenu = 'Ligne #1' . PHP_EOL . 'Ligne #2';
     fwrite($fopen, $contenu);
     fclose($fopen);
     echo $fichier." n'existait pas, donc il a été créé!";
 }
 
 
+// file_put_contents()
+
+// delete -> unlink()
+
+// copy()
+
+// rename()
+
+// 
 
 
 

@@ -1,4 +1,7 @@
 <?php
+
+// ********** Cet exemple est relié au dossier /extras
+
 session_start();
 // session : gardent de l'info dans des variables, pour plusieurs pages,
 // mais au contraire des cookies, garde plutôt sur le serveur
@@ -12,7 +15,7 @@ if (isset($_POST['submit'])) {
     if ($username == "Jean" && $password == "password") {
         $_SESSION['username'] = $username;
         // print_r($_SESSION);
-        header("Location: /S4_WEB/TraversyTuto/extras/config.php");
+        header("Location: /tutophp/extras/config.php");
         // exit();
     }
     else {

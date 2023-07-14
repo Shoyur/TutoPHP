@@ -17,8 +17,16 @@ array_push($fruits, "bleuets", "fraises");
 
 // array_filter()
 
+// array_map()
 
-// ET DES TONNES !!!!
+// array_search()
+
+// array_diff()
+
+// asort()
+
+
+// ET DES TONNES !!!!..........
 
 
 

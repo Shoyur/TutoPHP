@@ -5,12 +5,14 @@
     // Maintenant, ça va être avec des classes
     // qui contiennent des propriétés et des méthodes
 
+    declare(strict_types = 1);
+
 
     class Usager {
 
-        public $nom;        // est "public" donc on s'en sert à l'extérieur de la classe.
-        private $courriel;  // private peut seulement être accédé DANS la classe
-        protected $mdp;     // protected = dans la classe ET les classes qui héritent d'elle
+        public string $nom;        // est "public" donc on s'en sert à l'extérieur de la classe.
+        private string $courriel;  // private peut seulement être accédé DANS la classe
+        protected string $mdp;     // protected = dans la classe ET les classes qui héritent d'elle
 
         // Constructeur. Exécuté si on crée un instance de cet objet
         public function __construct() {     // on peut évidemment mettre des paramètres
@@ -20,7 +22,7 @@
 
         // méthodes:
         // setter
-        function setNom($nom) {
+        function setNom(string $nom) {
             $this->nom = $nom;
         }
         // getter

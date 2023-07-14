@@ -1,6 +1,6 @@
 <?php
 
-// variables toujours dispo dans tou sles scopes
+// variables toujours dispo dans tous les scopes
 
 // commencent tous par $_
 // ex. $_SERVER

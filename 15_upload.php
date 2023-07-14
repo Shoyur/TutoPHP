@@ -55,7 +55,7 @@
     <?php echo $message ?? null; ?>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
     Sélectionnez une image à téléverser:<br>
-    <input type="file" name="upload" id=""><br>
+    <input type="file" value="Parcourir..." name="upload" id=""><br>
     <input type="submit" value="Soumettre" name="submit">
     </form>
 </body>
